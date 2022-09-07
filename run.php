@@ -3,6 +3,7 @@
 require __DIR__.'/vendor/autoload.php';
 
 use Src\Classes\Chunkifier;
+use Src\Helpers\Helper;
 
 $source = $argv[1];
 $destination = $argv[2];
@@ -29,4 +30,11 @@ $chunkifier = new Chunkifier($argv[1], $argv[2]);
 $result = $chunkifier->chunk(1337, 11);
 
 print $result;
+
+if(Helper::isSparseFile($source))
+    print("sparse file" . PHP_EOL);
+else
+    print("normal file" . PHP_EOL);
+
 exit(0);
+
