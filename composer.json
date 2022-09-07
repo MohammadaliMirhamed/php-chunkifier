@@ -1,0 +1,17 @@
+{
+    "name": "mohammadali/chunkifier",
+    "description": "chunk the given file in to given directory",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Src\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "MohammadAli Mirhamed",
+            "email": "mamalirooy@gmail.com"
+        }
+    ],
+    "require": {}
+}
